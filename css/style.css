@@ -1,57 +1,128 @@
 
-/* 
-cores a serem utilizadas:
-Cor	Hex	Uso sugerido
-🔵 Azul	#1A5FB4	Links, botões, foco
-⚪ Branco #F7F7F5 Fundo
-⚫ Cinza	#333333	Texto principal
-Contraste
-#333333 sobre #F7F7F5 → ~12:1 ✅ AA + AAA
-#1A5FB4 sobre #F7F7F5 → ~6,4:1 ✅ AA + AAA
-🔵 #1A5FB4
-⚫ #333333
-Contraste entre elas: aprox. 1,9:1 ❌
+/*
+explicação tecnica sobre a escolha das cores:
+
+🎨 Paleta principal
+Cor	Hex	Uso
+🔵 Azul médio	#5264E8	Cor principal, botões, links, destaques
+🩵 Branco azulado	#F5F7FC	Fundo principal
+◻️ Cinza médio	#667085	Textos secundários, ícones, informações auxiliares
+
+Como elas conversam:
+
+#F5F7FC → fundo
+#5264E8 → elementos de destaque
+#667085 → textos e elementos secundários
+
+O #F5F7FC é propositalmente ligeiramente azulado, então fica mais confortável visualmente que #FFFFFF, mas ainda parece branco.
+
+Uma quarta cor que eu acrescentaria
+
+Para textos principais, eu não usaria o cinza médio. Usaria um azul-marinho quase preto:
+
+#1F2937
+
+Assim você teria:
+
+Fundo: #F5F7FC
+Texto principal: #1F2937
+Texto secundário: #667085
+Azul principal: #5264E8
+
+O resultado tende a ficar com uma aparência moderna, leve e profissional, sem cair naquele visual excessivamente "corporativo azul".
 */
+/*
+🎨 PALETA E CONTRASTE
+
+Faixa: Header e links no header
+Texto: #F5F7FC
+Fundo: #5264E8
+Razão de contraste: 4,51:1
+
+Faixa: Texto principal do body
+Texto: #1F2937
+Fundo: #F5F7FC
+Razão de contraste: 13,70:1
+
+Faixa: Títulos (h1–h6)
+Texto: #5264E8
+Fundo: #F5F7FC
+Razão de contraste: 4,51:1
+
+Faixa: Links do main
+Texto: #5264E8
+Fundo: #F5F7FC
+Razão de contraste: 4,51:1
+
+Faixa: Textos secundários (article ul li e figcaption)
+Texto: #667085
+Fundo: #F5F7FC
+Razão de contraste: 4,64:1
+
+Faixa: Footer e links no footer
+Texto: #F5F7FC
+Fundo: #5264E8
+Razão de contraste: 4,51:1
+
+FOCUS-VISIBLE / HOVER — CONTRASTE
+
+* A razão para a escolha de cada contrate para o destaque dos contornos segue algumas regras:
+1 - O cor não pode destoar da palheta declarada;
+2 - A cor deve ser visivel no background da area com um bom destaque e contraste;
+Logo, eu apreveitei as cores de destaque de cada seção para esse papel, já que elas cumprem bem as regras propostas, ou seja:
+em fundos: #F5F7FC a cor de destaque é: #5264E8, logo nos links do main, os contornos ganham a cor azul principal.
+em fundos: #5264E8 a cor de destaque é: #F5F7FC, logo no link do header, o contorno ganha a cor branco azulado.
+
+
+Header a:focus-visible/hover
+Contorno: #F5F7FC
+Fundo adjacente: #5264E8
+Razão de contraste: 4,51:1
+
+Main a:focus-visible/hover
+Contorno: #5264E8
+Fundo adjacente: #F5F7FC
+Razão de contraste: 4,51:1
+
+
+Toda dupla texto × fundo do post, inclusive cabeçalho e rodapé, está no comentário, com a razão medida, e passa em 4,5:1 (RNF8).
+*/
+
+
+
 
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #F5F7FC;
+    color: #1F2937;
     font-size: 1rem;
     line-height: 1.6;
-    color: #333333;
-    background-color: #f7f7f5;
 }
-
-header, footer {
-    background-color: #1A5FB4;
-    color: #f7f7f5;
-}
-header a {
-    color: #f7f7f5;
-    font-weight: 700;
+header a, footer .logo {
     font-size: 2rem;
+    font-weight: 700;
     text-decoration: none;
-}                   
-header a:focus-visible {
-    outline: 3px solid #f7f7f5;
+}
+header, footer, header a, footer a {
+    background-color: #5264E8;
+    color: #F5F7FC;
+}
+header a:hover, header a:focus-visible {
+    outline: 3px solid #F5F7FC;
     outline-offset: 3px;
 }
-
-h1, h2, h3 {
-    color: #1A5FB4;
+main a:hover, main a:focus-visible {
+    outline: 3px solid #5264E8;
+    outline-offset: 3px;
 }
-
+h1, h2, h3, h4, h5, h6 {
+    color: #5264E8;
+}
 main a {
-    color: #333333;
+    color: #5264E8;
+    font-weight: 700;
 }
-main a:hover {
-    color: #1A5FB4;
-}
-main a:focus-visible {
-    outline: 3px solid #1A5FB4;
-    outline-offset: 3px;
-    color: #1A5FB4;
-}           
-
-article li, figcaption {
+article ul li, figcaption {
+    color: #667085;
     font-size: 0.875rem;
 }
