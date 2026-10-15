@@ -85,57 +85,6 @@ Razão de contraste: 4,51:1
 
 
 Toda dupla texto × fundo do post, inclusive cabeçalho e rodapé, está no comentário, com a razão medida, e passa em 4,5:1 (RNF8).
-
-#### Tarefas
-
-- [x] 1. Escolha como as caixas do site medem a largura e aplique a todas.
-- [x] 2. Ponha o conteúdo do post numa coluna centralizada, com largura máxima em `rem`.
-- [x] 3. Dê à coluna um respiro lateral para o texto não encostar na tela do celular.
-- [x] 4. Faça a capa e as imagens das figuras caberem na coluna, sem distorcer.
-- [x] 5. Confira no diagrama de caixa (Computed) os espaços que o navegador pôs e decida quais ficam.
-- [ ] 6. Confira o post na simulação de 360 px e numa janela larga, item por item do "Pronto quando".
-
-#### Pronto quando
-
-- [x] A 360 px, não há rolagem horizontal, e nenhuma caixa passa da borda direita da tela no realce do F12 (RNF1).
-- [x] A capa e as duas imagens das figuras cabem inteiras na coluna, sem ficar achatadas, a 360 px e numa janela larga (RNF3).
-- [x] Numa janela larga, o conteúdo fica numa coluna centralizada, com o mesmo espaço vazio dos dois lados (RNF4).
-- [x] A 360 px, o texto não encosta nas laterais da tela.
-- [x] Nenhuma declaração com ⚠️ no Styles, e as listas e os links que não estão nos pedidos continuam como antes.
-- [x] O `boasvindas.html` não mudou.
-- [x] O post aparece igual no Chrome e no Edge, aberto com dois cliques (RNF10).
-
-#### Não fazer
-
-- Flexbox, grid e media queries: ficam fora da V1.
-- Mudar cores, fontes, contraste ou foco do c02.
-
-### P2.1 — Página inicial e card na coluna
-
-**Objetivo:** quem abre a página inicial no celular vê a apresentação e o card do post sem rolar para os lados, com a capa dentro do card.
-
-**Arquivos:** `css/style.css`, `index.html`
-
-#### Tarefas
-
-- [x] 1. Confira no Styles quais regras do post já atingem a página inicial.
-- [x] 2. Crie regra nova só para o que nenhuma regra existente resolve.
-- [x] 3. Faça a capa do card caber na coluna, sem distorcer.
-- [x] 4. Confira a página inicial na simulação de 360 px e numa janela larga, item por item do "Pronto quando".
-
-#### Pronto quando
-
-- [x] A 360 px, não há rolagem horizontal, e nenhuma caixa passa da borda direita da tela no realce do F12 (RNF1).
-- [x] A capa do card cabe inteira na coluna, sem ficar achatada (RNF3).
-- [x] Numa janela larga, a apresentação e a seção "Posts" ficam na mesma coluna centralizada do post (RNF4).
-- [x] Mudar a largura máxima da coluna no CSS muda as duas páginas.
-- [x] Nenhuma declaração com ⚠️ no Styles.
-- [x] O `index.html` não mudou.
-
-#### Não fazer
-
-- Borda, sombra ou fundo no card: a V1 não pede.
-- Flexbox, grid e media queries: ficam fora da V1.
 */
 
 * {
@@ -152,7 +101,7 @@ img {
   display: inline-block;
   margin: 0;
 }
-ul, or {
+ul, ol {
   padding: 0;
 }
 body {
@@ -210,15 +159,15 @@ figcaption {
 header, footer {
   padding: 1rem;
 }
-.info {
+main section ul li article ul li, main article ul li {
   display: inline-block;
   padding: 0 0.5rem;
   margin: 0.5rem;
 }
-.info p {
+main section ul li article ul li p, main article ul li p {
   margin: 0;
 }
-.voltar {
+main > a {
   display: inline-block;
   background-color: #5264e8;
   color: #f5f7fc;
