@@ -149,8 +149,8 @@ main {
 img {
   max-width: 100%;
   height: auto;
-  display: block;
-  margin: 1rem;
+  display: inline-block;
+  margin: 0;
 }
 ul, or {
   padding: 0;
