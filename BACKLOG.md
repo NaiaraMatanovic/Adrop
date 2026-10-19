@@ -2,8 +2,10 @@
 
 Ideias para as próximas versões da Adrop.
 
-- **Adrop no ar:** código no GitHub e publicação no GitHub Pages, com um link público para compartilhar os posts.
-- **Página "Sobre":** quem escreve na Adrop e o significado do nome.
-- **Menu no cabeçalho:** o nome "Adrop" de um lado e o menu (Início, Sobre) do outro.
 - **Posts em grade no computador:** cards lado a lado na tela grande e em uma coluna no celular.
+- **Coluna lateral:** no computador, cartão da autora, redes sociais e posts em alta ao lado dos posts.
+- **Busca e menu ☰:** busca de posts e menu compacto no cabeçalho.
+- **Player de músicas relaxantes:** um card fechável nos posts, com músicas para acompanhar a leitura.
 - **Domínio próprio:** um endereço próprio para a Adrop, como `adrop.com.br`.
+- **Espaço para anúncios.**
+- **Rebranding em pixel art:** nova identidade visual inspirada em videogames retrô.
