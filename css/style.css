@@ -177,3 +177,13 @@ main a {
   color: #f5f7fc;
   padding: 1rem;
 }
+.sobre {
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
