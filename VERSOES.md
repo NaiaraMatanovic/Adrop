@@ -18,3 +18,15 @@ Colocar a Adrop no ar, num link público, com a página "Sobre" e um cabeçalho 
 - **Menu no cabeçalho:** o nome "Adrop" à esquerda e o link "Sobre" à direita, em todas as páginas, no celular e no computador.
 - **Botão "Ler mais":** cada card da página inicial ganha um botão que abre o post.
 - **Adrop no ar:** código no GitHub, com histórico, e publicação no GitHub Pages; cada mudança enviada aparece no link público sem passo extra.
+
+## V3 — Adrop em duas colunas
+
+Dividir a Adrop em coluna de posts e coluna lateral, com banner de boas-vindas, página "Sobre mim", publicações relacionadas e mais posts para explorar.
+
+- **Banner de boas-vindas:** no topo da página inicial, com o convite "Conheça o projeto", que leva à página "Sobre".
+- **Mais posts:** a Adrop passa a ter pelo menos três posts.
+- **Coluna lateral:** na página inicial e nos posts, com posts em destaque, um bloco da Adrop (redes sociais e "Sobre a Adrop") e o cartão da autora (foto, nome, redes sociais e "Sobre mim").
+- **Duas colunas no computador, uma no celular:** no celular, a coluna lateral vai para baixo do conteúdo.
+- **Publicações relacionadas:** no fim de cada post, dois cards levam a outras leituras.
+- **Página "Sobre mim":** quem escreve ganha página própria; a página "Sobre" passa a falar só do projeto.
+- **Cabeçalho mais limpo:** só o nome "Adrop", que leva à página inicial.

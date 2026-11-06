@@ -16,11 +16,12 @@ O ponto de partida são aprendizados vindos de livros, sem se restringir a eles.
 
 ## O que faz
 
-- Apresenta a Adrop e lista os posts, dos mais recentes para os mais antigos, em cards com capa, resumo e botão "Ler mais".
-- Oferece páginas de leitura para cada post, com título, data, tema e autor.
-- Tem uma página "Sobre", com quem escreve e o significado do nome.
-- Traz um cabeçalho com o nome "Adrop" e o menu "Sobre" em todas as páginas.
-- Funciona bem no celular e no computador.
+- Recebe quem chega com um banner de boas-vindas e um convite para conhecer o projeto.
+- Lista os posts, dos mais recentes para os mais antigos, em cards com capa, resumo e botão "Ler mais".
+- Oferece páginas de leitura para cada post, com título, data, tema e autor, e sugestões de publicações relacionadas no fim.
+- Traz uma coluna lateral com posts em destaque, as redes sociais da Adrop e um cartão da autora.
+- Tem uma página "Sobre", que apresenta o projeto e o significado do nome, e uma página "Sobre mim", com quem escreve.
+- Organiza a página em duas colunas no computador e em uma coluna no celular.
 - Fica publicada num link público, pelo GitHub Pages.
 
 ## Para quem
