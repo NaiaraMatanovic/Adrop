@@ -1,0 +1,420 @@
+/* Reset de CSS básico - fonte: A Modern CSS Reset – Josh Comeau */
+
+/* 1. Use a more-intuitive box-sizing model */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+*:not(dialog) {
+  margin: 0;
+}
+
+/* 3. Enable keyword animations */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    interpolate-size: allow-keywords;
+  }
+}
+
+body {
+  /* 4. Increase line-height */
+  line-height: 1.5;
+  /* 5. Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 6. Improve media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 7. Inherit fonts for form controls */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* 8. Avoid text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* 9. Improve line wrapping */
+p {
+  text-wrap: pretty;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+/*
+  10. Create a root stacking context
+*/
+#root,
+#__next {
+  isolation: isolate;
+}
+
+/* Inicio do meu CSS */
+
+/* explicação tecnica sobre a escolha das cores: */
+
+/* 🎨 PALETA DE CORES
+
+   Azul principal:       #5264E8 → Botões, links e destaques.
+   Branco azulado:       #F5F7FC → Fundo principal.
+   Azul-marinho escuro:  #1F2937 → Textos.
+   Cinza médio:          #667085 → Textos secundários, ícones e informações auxiliares.
+
+   Hierarquia:
+   Fundo → #F5F7FC
+   Destaques → #5264E8
+   Texto principal → #1F2937
+   Texto secundário → #667085
+
+*/
+
+/* Cabeçalho: */
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .logo {
+  display: flex;
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #f5f7fc;
+  margin: 0.5rem;
+}
+
+/* corpo - main */
+
+body {
+  background-color: #5264e8;
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  background-color: #f5f7fc;
+  color: #1f2937;
+  max-width: 70rem;
+  margin: 0 auto;
+  padding: 2rem;
+  border-radius: 20px;
+}
+.coluna1,
+.coluna2 {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* conteúdo das colunas */
+
+/* coluna 1 */
+
+/* banner */
+.banner {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+  background-color: #5264e8;
+  color: #f5f7fc;
+  padding: 2rem;
+  border-radius: 20px;
+}
+.banner > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.banner img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Publicações */
+
+.publicacoes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.publicacoes > ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.publicacoes h2 {
+  padding: 0 0 1rem 0;
+  color: #f5f7fc;
+}
+.publicacao {
+  border: solid 3px #f5f7fc;
+  border-radius: 20px;
+}
+.publicacao article .conteudoPost {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+  background-color: #f5f7fc;
+  border-radius: 15px;
+}
+.publicacao img {
+  border-radius: 15px 15px 0 0;
+}
+.publicacoes {
+  background-color: #5264e8;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+.infoPost {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: #5264e8;
+  font-size: 0.875rem;
+  list-style: none;
+  padding: 0;
+  gap: 1rem;
+  flex-wrap: wrap;
+  color: #f5f7fc;
+  border-radius: 20px;
+}
+.infoPost li {
+  padding: 0.5rem;
+}
+
+/* coluna 2 */
+
+.coluna2 .cardLateral {
+  padding: 1rem;
+  border: #5264e8 solid 3px;
+  border-radius: 20px;
+}
+.coluna2 {
+  max-width: 20rem;
+}
+
+/* Destaques */
+.cardDestaques {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: #5264e8;
+}
+.cardDestaques h3 {
+  color: #f5f7fc;
+}
+.postsDestaques {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  list-style: none;
+  padding: 0;
+}
+.postDestaque a {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  border: #f5f7fc solid 3px;
+  border-radius: 15px;
+  background-color: #f5f7fc;
+  text-decoration: none;
+  font-size: 0.875rem;
+  color: #1f2937;
+}
+.postDestaque img {
+  border-radius: 10px 0 0 10px;
+}
+.tituloCentralizado {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Sobre a Adrop */
+
+.cardAdrop {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
+.cardAdrop h3,
+.cardAdrop h4,
+.cardAdrop h5 {
+  color: #1f2937;
+}
+.redesAdrop {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  list-style: none;
+  padding: 0;
+  margin-top: 1rem;
+}
+.redeAdrop a {
+  display: flex;
+  gap: 1rem;
+  text-decoration: none;
+  color: #1f2937;
+}
+.redeAdrop img {
+  border-radius: 50%;
+}
+.cardAdrop .botaoEscuro {
+  margin-top: 1rem;
+}
+
+/* Sobre a autora */
+
+.cardAutor {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
+.cardAutor h3,
+.cardAutor h4,
+.cardAutor h5 {
+  color: #1f2937;
+}
+.redesAutora {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  list-style: none;
+  padding: 0;
+  margin-top: 1rem;
+}
+.redeAutora a {
+  display: flex;
+  gap: 1rem;
+  text-decoration: none;
+  color: #1f2937;
+}
+.redeAutora img {
+  border-radius: 50%;
+}
+.cardAutor .botaoEscuro {
+  margin-top: 1rem;
+}
+
+/* Botões */
+
+.botaoClaro {
+  background-color: #f5f7fc;
+  padding: 1rem;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  color: #1f2937;
+  text-decoration: none;
+  font-weight: 700;
+}
+.botaoEscuro {
+  background-color: #5264e8;
+  padding: 1rem;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  color: #f5f7fc;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+/* Rodapé */
+
+footer {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #f5f7fc;
+}
+footer .logo {
+  display: flex;
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #f5f7fc;
+  margin: 0.5rem 0.5rem 0 0.5rem;
+}
+
+/* Artigo */
+
+.artigo {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.artigo img {
+  border-radius: 20px;
+}
+.artigo a {
+  text-decoration: none;
+  color: #1f2937;
+}
+.artigo ul {
+  list-style: none;
+  padding: 0;
+}
+.artigo .infoPubli {
+  background-color: #5264e8;
+  color: #f5f7fc;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  border-radius: 20px;
+}
+
+/* Focos */
+
+.logo:focus-visible,
+.cardDestaques a:focus-visible,
+.botaoClaro:focus-visible {
+  outline: solid 4px #ffffff;
+  outline-offset: 3px;
+}
+.botaoEscuro:focus-visible,
+.redesAdrop a:focus-visible,
+.redesAutora a:focus-visible {
+  outline: solid 4px #000000;
+  outline-offset: 3px;
+}
