@@ -215,6 +215,10 @@ main {
 .infoPost li {
   padding: 0.5rem;
 }
+.tituloPost {
+  color: #1f2937;
+  text-decoration: none;
+}
 
 /* coluna 2 */
 
