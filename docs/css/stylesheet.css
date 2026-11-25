@@ -305,6 +305,13 @@ header .logo {
 .cardAutor .botaoEscuro {
   margin-top: 1rem;
 }
+.introducaoAutora > img {
+  border-radius: 15px;
+  margin-bottom: 1rem;
+}
+.nome {
+  margin-bottom: 1rem;
+}
 /* Botões */
 .botaoClaro {
   background-color: #f5f7fc;
@@ -383,6 +390,34 @@ footer .logo {
   outline: solid 4px #000000;
   outline-offset: 3px;
 }
+/*Posts*/
+/*Relacionados*/
+.relacionados {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  background-color: #5264e8;
+  padding: 1rem;
+  border-radius: 20px;
+  color: #f5f7fc;
+}
+.relacionados > div {
+  display: flex;
+  gap: 1rem;
+}
+.cardRel {
+  background-color: #f5f7fc;
+  color: #1f2937;
+  border-radius: 15px;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.cardRel img {
+  border-radius: 10px;
+}
 
 /*Regras do css escritas pensando em 2 colunas:*/
 @media (min-width: 1024px) {
@@ -393,5 +428,8 @@ footer .logo {
   .coluna1.sobreMim,
   .coluna1.sobreAdrop {
     grid-column: 1/-1;
+  }
+  .botaoEscuro {
+    max-width: 20rem;
   }
 }
