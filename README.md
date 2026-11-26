@@ -22,6 +22,9 @@ O ponto de partida são aprendizados vindos de livros, sem se restringir a eles.
 - Traz uma coluna lateral com posts em destaque, as redes sociais da Adrop e um cartão da autora.
 - Tem uma página "Sobre", que apresenta o projeto e o significado do nome, e uma página "Sobre mim", com quem escreve.
 - Organiza a página em duas colunas no computador e em uma coluna no celular.
+- Mostra, em cada post, o tempo de leitura, calculado a partir do texto.
+- Tem um botão no cabeçalho que troca entre o visual claro e o escuro.
+- Oferece, no fim de cada post, um botão "Voltar ao topo".
 - Fica publicada num link público, pelo GitHub Pages.
 
 ## Para quem
@@ -33,6 +36,7 @@ essas ideias sem precisar ler o livro inteiro nem decifrar termos técnicos.
 
 - HTML
 - CSS
+- JavaScript
 - Git e GitHub
 - GitHub Pages (hospedagem)
 

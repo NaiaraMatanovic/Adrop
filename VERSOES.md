@@ -30,3 +30,11 @@ Dividir a Adrop em coluna de posts e coluna lateral, com banner de boas-vindas, 
 - **Publicações relacionadas:** no fim de cada post, dois cards levam a outras leituras.
 - **Página "Sobre mim":** quem escreve ganha página própria; a página "Sobre" passa a falar só do projeto.
 - **Cabeçalho mais limpo:** só o nome "Adrop", que leva à página inicial.
+
+## V4 — Primeiros passos em JavaScript
+
+Dar à Adrop os primeiros comportamentos em JavaScript: tempo de leitura nos posts, modo escuro e botão "Voltar ao topo".
+
+- **Tempo de leitura:** na página de cada post, perto da data, aparece quanto tempo leva para ler o texto, calculado sozinho a partir do número de palavras.
+- **Modo escuro:** um botão no canto direito do cabeçalho, em todas as páginas, troca entre o visual claro e o escuro, com texto legível nos dois.
+- **Voltar ao topo:** no fim de cada post, junto de "Voltar para a página inicial", um botão leva de volta ao início do texto; os dois ficam empilhados no celular e lado a lado em telas maiores.
