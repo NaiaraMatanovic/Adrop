@@ -219,6 +219,10 @@ header .logo {
   list-style: none;
   padding: 0;
 }
+.postDestaque img {
+  max-width: 30%;
+  height: auto;
+}
 .postDestaque a {
   display: flex;
   gap: 1rem;
@@ -377,7 +381,7 @@ footer .logo {
   padding: 1rem;
   border-radius: 20px;
 }
-/* Focos */
+/* Focos */relacio
 .logo:focus-visible,
 .cardDestaques a:focus-visible,
 .botaoClaro:focus-visible {
