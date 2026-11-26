@@ -418,6 +418,9 @@ footer .logo {
 .cardRel img {
   border-radius: 10px;
 }
+.relacionados a {
+  text-decoration: none;
+}
 
 /*Regras do css escritas pensando em 2 colunas:*/
 @media (min-width: 1024px) {
